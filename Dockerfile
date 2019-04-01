@@ -1,10 +1,10 @@
 # Docker for the CLI11 project
 
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 LABEL edu.uanet.xq6-devops.url="https://github.com/xiaofeng-qu/dockerfile-for-docker-compose-project" \
       edu.uanet.xq6-devops.distro="ubuntu" \
-      edu.uanet.xq6-devops.osversion="14.04" \
+      edu.uanet.xq6-devops.osversion="16.04" \
       edu.uanet.xq6-devops.architecture="x86_64"
 
 # Update the sytem and Install dependencies
