@@ -11,7 +11,8 @@ LABEL edu.uanet.xq6-devops.url="https://github.com/xiaofeng-qu/dockerfile-for-do
 RUN yum -y update && \
     yum install -y make \
                    gcc-c++ \
-                   unzip
+                   unzip \
+                   tar
 
 # Install cmake 3.12.4
 RUN curl -L https://cmake.org/files/v3.12/cmake-3.12.4-Linux-x86_64.tar.gz | tar zx --strip-components=1 -C /usr/local
