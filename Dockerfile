@@ -1,10 +1,10 @@
 # Docker for the CLI11 project
 
-FROM centos:6.8
+FROM centos:6.9
 
 LABEL edu.uanet.xq6-devops.url="https://github.com/xiaofeng-qu/dockerfile-for-docker-compose-project" \
       edu.uanet.xq6-devops.distro="centos" \
-      edu.uanet.xq6-devops.osversion="6.8" \
+      edu.uanet.xq6-devops.osversion="6.9" \
       edu.uanet.xq6-devops.architecture="x86_64"
 
 # Update the system and install dependencies
