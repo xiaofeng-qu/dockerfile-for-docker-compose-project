@@ -13,6 +13,9 @@ RUN apt-get -y update && \
     apt-get -y dist-upgrade && \
     apt-get install -y wget \
                        make \
-                       cmake \
+                       curl \
                        g++ \
                        zip
+
+# install cmake 3.12.4 manually
+RUN curl -L https://cmake.org/files/v3.12/cmake-3.12.4-Linux-x86_64.tar.gz | tar zx --strip-components=1 -C /usr/local
