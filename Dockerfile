@@ -1,18 +1,17 @@
 # Docker for the CLI11 project
 
-FROM ubuntu:18.04
+FROM centos:6.6
 
 LABEL edu.uanet.xq6-devops.url="https://github.com/xiaofeng-qu/dockerfile-for-docker-compose-project" \
-      edu.uanet.xq6-devops.distro="ubuntu" \
-      edu.uanet.xq6-devops.osversion="18.04" \
+      edu.uanet.xq6-devops.distro="centos" \
+      edu.uanet.xq6-devops.osversion="6.6" \
       edu.uanet.xq6-devops.architecture="x86_64"
 
-# Update the sytem and Install dependencies
-RUN apt-get -y update && \
-    apt-get -y upgrade && \
-    apt-get -y dist-upgrade && \
-    apt-get install -y wget \
-                       make \
-                       cmake \
-                       g++ \
-                       zip
+# Update the system and install dependencies
+RUN yum -y update && \
+    yum install -y make \
+                   gcc-c++ \
+                   unzip
+
+# Install cmake 3.12.4
+RUN curl -L https://cmake.org/files/v3.12/cmake-3.12.4-Linux-x86_64.tar.gz | tar zx --strip-components=1 -C /usr/local
