@@ -1,10 +1,10 @@
 # Docker for the CLI11 project
 
-FROM centos:7.5.1804
+FROM centos:7.4.1708
 
 LABEL edu.uanet.xq6-devops.url="https://github.com/xiaofeng-qu/dockerfile-for-docker-compose-project" \
       edu.uanet.xq6-devops.distro="centos" \
-      edu.uanet.xq6-devops.osversion="7.5.1804" \
+      edu.uanet.xq6-devops.osversion="7.4.1708" \
       edu.uanet.xq6-devops.architecture="x86_64" \
       edu.uanet.xq6-devops.project="CLI11" \
       edu.uanet.xq6-devops.project.url="https://github.com/CLIUtils/CLI11"
